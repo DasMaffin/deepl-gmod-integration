@@ -1,4 +1,3 @@
-print("Hello, World!")
 local PANEL = {}
 vgui.Register("TranslatedChatPanel", PANEL, "EditablePanel")
 
