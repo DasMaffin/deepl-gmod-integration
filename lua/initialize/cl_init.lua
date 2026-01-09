@@ -1,5 +1,5 @@
 TranslatedChat.chatText = ""
-
+include("initialize/languages.lua")
 hook.Add("StartChat", "OverrideDefaultChatWithTranslated", function(isTeamChat)
     TranslatedChat:EnableChat()
     return true

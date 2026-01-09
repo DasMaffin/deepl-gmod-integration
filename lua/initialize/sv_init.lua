@@ -12,7 +12,6 @@ if file.Exists(path, "DATA") then
 end
 
 local function translate(text, ply)
-
     if not isstring(text) or #text < 2 then return end
     if #text > 500 then return end -- avoid spam / cost
     if not IsValid(ply) then return end
@@ -38,7 +37,6 @@ local function translate(text, ply)
         end
     })
 end
-
 
 -- First we need to cache the message so we only have to ask for the translation once and not per player.
 hook.Add("PlayerSay", "DeepL_Translate", function(ply, text, team)
